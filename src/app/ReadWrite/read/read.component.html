@@ -1,0 +1,15 @@
+<button type="submit" (click)="onGet()">Get details</button>&nbsp;&nbsp;
+<button type="submit" (click)="onSort()">Get minimum time details</button>
+<br> <br>
+<div *ngIf="isTrue">
+<ul *ngFor="let k of Array">
+    <li>{{k.bookingId}}--{{k.seatNo}}--{{k.phoneNo}}</li> 
+  
+</ul></div>
+<div *ngIf="!isTrue">
+    <ul *ngFor="let k of sortedArray; index as i">
+        <li>{{k.bookingId}}--{{k.seatNo}}--{{k.phoneNo}}</li> 
+        <p> Total minimum time uptil here={{i*60}}</p>
+    </ul>
+
+</div>

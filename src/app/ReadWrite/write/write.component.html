@@ -1,0 +1,28 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first"><h1>Add recipient</h1>
+    </div>
+
+    <!-- Login Form -->
+    <form [formGroup]="thisForm" (ngSubmit)="onSubmit()">
+      <input type="text"  class="fadeIn second" formControlName="bookingId" placeholder="Booking Id">
+      <input type="number"  class="fadeIn second" formControlName="seatNo" placeholder="Seat Number">
+      <input type="text" class="fadeIn third" formControlName="phoneNo" placeholder="Phone Number">
+<button type="submit">Click to Add</button>
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+     
+    </div>
+
+  </div>
+</div>
